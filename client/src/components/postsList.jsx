@@ -3,6 +3,7 @@ import React from 'react';
 // import { parseISO } from "date-fns";
 import { allPostsIDs, postErrors, postStatus, } from "../features/posts/postSlice";
 import PostExducer from "./postExducer";
+import LoadingSpinner from "./spinner";
 
 const PostsList = () => {
     // const posts = useSelector(allPosts)
@@ -27,7 +28,7 @@ const PostsList = () => {
         console.log(errors);
         content = <div>{errors}</div>
     }else if(status === "loading"){
-        content = <p>Loading...</p>
+        content = <LoadingSpinner size={60} />
     }else if(status === "succeeded"){
         console.log(status)
         // const orderedPosts = posts.slice().sort((a, b) => parseISO(b.date) - parseISO(a.date));
