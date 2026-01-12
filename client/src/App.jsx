@@ -5,8 +5,8 @@ import PostsList from './components/postsList'
 import EditPost from './pages/EditPost'
 import ViewPost from './pages/ViewPost'
 import Layout from './components/Layout'
-import UsersPage from './pages/usersPage'
-import UserPosts from './pages/userPosts'
+import UsersPage from './pages/UsersPage'
+import UserPosts from './pages/UserPosts'
 
 
 function App() {
